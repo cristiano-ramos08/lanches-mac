@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wBzv7l5C1fZl+YQYbj6yQKB8ollruAI3i2qPFFXv2fc=",
+  "Hash": "u5tkOHXUfWSJG5KKtIUBBN3Gxr9LoCv0sQYMNgPgtGU=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -134,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\carousel3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Katia\\source\\repos\\LanchesMac\\LanchesMac\\wwwroot\\images\\delete.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Katia\\source\\repos\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/delete.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\delete.png"
+    },
+    {
+      "Identity": "C:\\Users\\Katia\\source\\repos\\LanchesMac\\LanchesMac\\wwwroot\\images\\Full-Cart-icon.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Katia\\source\\repos\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/Full-Cart-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Full-Cart-icon.png"
     },
     {
       "Identity": "C:\\Users\\Katia\\source\\repos\\LanchesMac\\LanchesMac\\wwwroot\\js\\site.js",

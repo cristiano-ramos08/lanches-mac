@@ -1,4 +1,5 @@
-﻿using LanchesMac.Models.Context;
+﻿using LanchesMac.Models;
+using LanchesMac.Models.Context;
 using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -23,8 +24,12 @@ public class Startup
 
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); //vai valer pelo tempo de vida aplicação
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
         services.AddControllersWithViews();
+        services.AddMemoryCache();
+        services.AddSession();
         
 
     }
