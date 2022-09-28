@@ -27,6 +27,10 @@ namespace LanchesMac.Controllers
             }
             else
             {
+                lanches = _lancheRepository.Lanches
+                       .Where(l => l.Categoria.CategoriaNome.Equals(categoria))
+                       .OrderBy(l => l.Nome);
+                /*
                 if (string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
                 {
                     lanches = _lancheRepository.Lanches
@@ -40,7 +44,7 @@ namespace LanchesMac.Controllers
                         .OrderBy(l => l.Nome);
 
                 }
-                
+                */
                 categoriaAtual = categoria;
 
             }
