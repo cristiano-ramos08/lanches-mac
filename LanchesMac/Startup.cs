@@ -21,9 +21,10 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-        services.AddSession();
+        
 
         services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<IPedidoRepository, PedidoRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); //vai valer pelo tempo de vida aplicação
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
@@ -54,7 +55,6 @@ public class Startup
         app.UseRouting();
         app.UseSession();
 
-        app.UseAuthentication();
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
